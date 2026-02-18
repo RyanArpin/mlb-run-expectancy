@@ -30,8 +30,8 @@ Each event type has a measurable impact on run expectancy. Key results:
 | Double | +0.754 |
 | Single | +0.469 |
 | Walk | +0.324 |
-| Strikeout | +0.273 |
-| Caught Stealing | +0.428 |
+| Strikeout | -0.273 |
+| Caught Stealing | -0.428 |
 
 ![Run Value by Event Type](notebooks/run_values.png)
 
@@ -51,9 +51,9 @@ The data confirms what modern analytics has long argued: the sacrifice bunt cons
 
 | Situation | RE Before | RE After | Change |
 |-----------|-----------|----------|--------|
-| Runner on 1st, 0 outs | 0.895 | 0.681 | +0.214 |
-| Runner on 2nd, 0 outs | 1.125 | 0.949 | +0.175 |
-| Runners on 1st and 2nd, 0 outs | 1.505 | 1.387 | +0.119 |
+| Runner on 1st, 0 outs | 0.895 | 0.681 | -0.214 |
+| Runner on 2nd, 0 outs | 1.125 | 0.949 | -0.175 |
+| Runners on 1st and 2nd, 0 outs | 1.505 | 1.387 | -0.119 |
 
 ![Strategic Analysis](notebooks/strategic_analysis.png)
 
