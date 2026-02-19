@@ -83,6 +83,10 @@ run_expectancy.columns = ['outs', 'base_state', 'run_expectancy']
 matrix = run_expectancy.pivot(index='base_state', columns='outs', values='run_expectancy')
 matrix.columns = ['0 outs', '1 out', '2 outs']
 
+# Sort rows by average run expectancy ascending
+state_order = matrix.mean(axis=1).sort_values().index
+matrix = matrix.loc[state_order]
+
 print("\nRun Expectancy Matrix:")
 print(matrix.round(3))
 
